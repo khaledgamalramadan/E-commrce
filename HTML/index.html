@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Topoco</title>
+  <link rel="icon" type="image/x-icon" href="../img/banner/banner-1.jpg">
+  <!--Linke Css files -->
+  <link rel="stylesheet" href="../CSS/style.css">
+  <!-- Font ousam -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body>
+  <!-- Start header -->
+  <header>
+    <div class="container top-nav"> <!-- top nav contant-->
+      <a href="#" class="logo"> <img src="../img/logo-black.png" alt="logo"></a>
+      <form action="" class="search">
+        <input type="search"  placeholder="Search...">
+        <button type="submit" >Search</button>
+      </form>
+      <div class="cart-header">
+        <div class="icon-cart">
+          <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+          <span class="count-item">0</span>
+        </div>
+      
+        <div class="total-price">
+          <p>My Cart</p>
+          <p class="price_cart_head">$0</p>
+        </div>
+      </div>
+    </div>
+
+    <nav>     <!-- links of navbar -->
+      <div class="links container">
+        <ul>
+          <li class="activ"><a href="" >Home</a></li>
+          <li><a href="">Products</a></li>
+          <li><a href="">About us</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+        <div class="login_signup">
+          <a href="" >Login <i class="fa-solid fa-right-to-bracket"></i></a>
+          <a href="" >Sign up <i class="fa-solid fa-user-plus"></i></a>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- Start Sidbar -->
+  <Section class="slider">
+    <div class="container">
+      <div class="sid-bar">
+        <h3><i class="fa-solid fa-bars"></i> Shop by department</h3>
+        <a href="">All Categories</a>
+        <a href="">Best Seller Products</a>
+        <a href="">New Arrivals</a>
+        <a href="">Top 10 Offers</a>
+        <a href="">Phones & Tablet</a>
+        <a href="">Electronics & Digital</a>
+        <a href="">Fashion & Clothings</a>
+        <a href="">Jewelry & watches </a>
+        <a href="">Tv & Audio</a>
+      </div>
+
+      <!-- Swiper Contant-->
+      <div class="slide-swp mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href=""><img src="../img/slider-01.jpg" alt=""></a>
+          </div>
+          <div class="swiper-slide">
+            <a href=""><img src="../img/slider-02.jpg" alt=""></a>
+          </div>
+          <div class="swiper-slide">
+            <a href=""><img src="../img/slider-03.jpg" alt=""></a>
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+
+    </div>
+  </Section>
+
+  <section class="features">
+    <div class="container">
+      <div class="feature-item">
+        <img src="../img/features1.png" alt="">
+        <div class="text">
+          <h4>Free Shoping</h4>
+          <p>Free Shoping on all order</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <img src="../img/features2.png" alt="">
+        <div class="text">
+          <h4>Free Shoping</h4>
+          <p>Free Shoping on all order</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <img src="../img/features3.png" alt="">
+        <div class="text">
+          <h4>Free Shoping</h4>
+          <p>Free Shoping on all order</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <img src="../img/features4.png" alt="">
+        <div class="text">
+          <h4>Free Shoping</h4>
+          <p>Free Shoping on all order</p>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <section>
+    <div class="banner">
+      <div class="container">
+        <div class="banner-img">
+          <div class="glass-hover">
+            <a href=""></a>
+              <img src="../img/banner/banner-1.jpg" alt="">
+          </div>
+        </div>
+        
+        <div class="banner-img">
+          <div class="glass-hover">
+            <a href=""></a>
+              <img src="../img/banner/banner-2.jpg" alt="">
+          </div>
+        </div>
+        <div class="banner-img">
+          <div class="glass-hover">
+            <a href=""></a>
+              <img src="../img/banner/banner-3.jpg" alt="">
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- js files  -->
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullests: true,
+
+      },
+      autoplay:{
+        delay: 2500,
+      },
+      loop : true,
+    });
+  </script>
+</body>
+</html>
